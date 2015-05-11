@@ -88,18 +88,23 @@ var arr= [0,1];
 
 
 var fib = [0,1];
-var Fibo = function (number) {
+console.log(fib[0]);
+console.log(fib[1]);
+
+var Fibo = function(number) {
   i = 2;
-  fib[i] = fib[i-1] + fib[i-2];
-  result = fib[i];
+  result = 0;
   while (result < number) {
-    return result;
+    fib[i] = fib[i-1] + fib[i-2];
+    console.log(fib[i]);
+    result = fib[i];
     i++;
   }
-  console.log(fib[i]);
+
 };
 
 Fibo(145);
+
 //
 // var Fibo = function(num) {
 //   var a = 0;
